@@ -72,3 +72,29 @@ const observer = new IntersectionObserver(entries => {
 
 const skillsSection = document.getElementById('skills');
 if (skillsSection) observer.observe(skillsSection);
+// ── Content Slider ──
+const contentSlides = document.querySelectorAll('.content-slide');
+const contentDotsContainer = document.getElementById('contentSlideDots');
+let contentCurrent = 0;
+
+// Build dots
+contentSlides.forEach((_, i) => {
+  const dot = document.createElement('div');
+  dot.className = 'content-dot' + (i === 0 ? ' active' : '');
+  dot.onclick = () => goToContent(i);
+  contentDotsContainer.appendChild(dot);
+});
+
+function goToContent(index) {
+  contentSlides[contentCurrent].classList.remove('active');
+  contentCurrent = (index + contentSlides.length) % contentSlides.length;
+  contentSlides[contentCurrent].classList.add('active');
+  document.querySelectorAll('.content-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === contentCurrent);
+  });
+}
+
+function changeContentSlide(dir) {
+  sounds.click.play();
+  goToContent(contentCurrent + dir);
+}

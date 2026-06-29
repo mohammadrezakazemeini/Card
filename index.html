@@ -194,15 +194,30 @@
   </section>
 
   <!-- ══ COMMISSIONS ══ -->
-  <section id="commissions">
-    <div class="section-title">what I post</div>
-    <div class="section-divider"></div>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>Status</h3>
-        <p>I will be posting guides, finished works and processes for my artwork as much as I can. but the following works are not to be sold to 3rd parties or used to profit from. </p>
+ <!-- ══ COMMISSIONS ══ -->
+<section id="commissions">
+  <div class="section-title">what I post</div>
+  <div class="section-divider"></div>
+
+  <div class="content-slider">
+
+    <!-- Slide 1 -->
+    <div class="content-slide active">
+      <video class="slide-video" autoplay loop muted playsinline>
+        <source src="video1.webm" type="video/webm">
+      </video>
+      <div class="slide-overlay">
+        <h3>What I Post</h3>
+        <p>I will be posting guides, finished works and processes for my artwork as much as I can. The following works are not to be sold to 3rd parties or used to profit from.</p>
       </div>
-      <div class="about-card">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="content-slide">
+      <video class="slide-video" autoplay loop muted playsinline>
+        <source src="video2.webm" type="video/webm">
+      </video>
+      <div class="slide-overlay">
         <h3>What I Draw</h3>
         <ul>
           <li>Character portraits (bust / half / full body)</li>
@@ -212,8 +227,20 @@
         </ul>
       </div>
     </div>
-  </section>
 
+    <!-- Controls -->
+    <div class="content-slide-controls">
+      <button class="content-slide-btn" onclick="changeContentSlide(-1)">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <div class="content-slide-dots" id="contentSlideDots"></div>
+      <button class="content-slide-btn" onclick="changeContentSlide(1)">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
   <!-- ══ SOCIALS ══ -->
   <section id="socials">
     <div class="section-title">Find Me Online</div>
