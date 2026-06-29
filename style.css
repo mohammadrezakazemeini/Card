@@ -465,7 +465,8 @@
   justify-content: center;
   padding: 2.5rem 3rem;
   background: linear-gradient(to right, rgba(0,0,0,0.92) 40%, transparent 100%);
-  max-width: 55%;
+  max-width: 100%;
+  box-sizing: border-box;
   color: #fff;
   text-align: left;
 }
