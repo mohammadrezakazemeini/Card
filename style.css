@@ -325,7 +325,14 @@
       flex-wrap: wrap;
       margin-top: 8px;
     }
-
+    .yellow-link {
+  color: yellow;
+  text-decoration: none; /* Optional: removes underline */
+    }
+    .yellow-link:hover {
+      color: gold; /* Or any lighter/darker shade */
+      text-decoration: underline;
+    }
     .slide-badge {
       background: rgba(255,239,0,0.1);
       border: 1px solid rgba(255,239,0,0.3);
