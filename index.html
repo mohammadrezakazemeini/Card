@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mr.K — Archive</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
 </head>
 <body>
+
+  <!-- ══ HERO BANNER ══ -->
   <div class="banner">
     <div class="slider" style="--quantity: 10">
       <div class="item" style="--position: 1"><img src="1000.webp" alt="artwork 1"></div>
@@ -21,13 +22,16 @@
       <div class="item" style="--position: 8"><img src="1004.webp" alt="artwork 8"></div>
       <div class="item" style="--position: 9"><img src="992.webp" alt="artwork 9"></div>
       <div class="item" style="--position: 10"><img src="Timeline%201.webp" alt="artwork 10"></div>
+      <div class="item item-3d" id="model3dItem">
+        <canvas id="model3dCanvas"></canvas>
+      </div>
     </div>
+
     <div class="content" style="margin-top:20px">
       <h1>Mr.K</h1>
       <h2>Archive</h2>
-      <p></p>
-      <p></p>
     </div>
+
     <div class="scroll-cue">scroll <i class="fa fa-chevron-down"></i></div>
   </div>
 
@@ -36,7 +40,8 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
-    <a href="#commissions">Content</a>
+    <a href="#commissions">Commissions</a>
+    <a href="#posts">Content</a>
     <a href="#socials">Socials</a>
   </nav>
 
@@ -57,14 +62,14 @@
       <div class="about-card">
         <h3>Art Guidelines</h3>
         <ul>
-          <li>____________________________.</li>
-          <li> Character art & fan art</li>
-          <li> OC designs & redesigns</li>
-          <li> Mild action / fantasy themes</li>
-          <li>____________________________.</li>
-          <li> No NSFW content</li>
-          <li> No Gore or extreme violence</li>
-          <li> No Hate-based imagery</li>
+          <li>I enjoy drawing:</li>
+          <li>Character art & fan art</li>
+          <li>OC designs & redesigns</li>
+          <li>Mild action / fantasy themes</li>
+          <li>I will not draw:</li>
+          <li>No NSFW content</li>
+          <li>No gore or extreme violence</li>
+          <li>No hate-based imagery</li>
         </ul>
       </div>
     </div>
@@ -151,8 +156,10 @@
             <span class="slide-tag">Commissions</span>
             <h3>Commission Work</h3>
             <p>
-              Commissions are open from August 1st to October 30th. the pricing is as described in the commissions section for international consumers
-              but depending on the location and situation the pricings may vary. for further information contact me at <a href="mailto:mohammadreza1kazemeini@gmail.com ?subject=Commission Inquiry" class="yellow-link">Commission Request</a>
+              Commissions are open from August 1st to October 30th. Pricing is as described in the
+              commissions section for international customers, but depending on location and
+              situation the pricing may vary. For more information, contact me at
+              <a href="mailto:mohammadreza1kazemeini@gmail.com?subject=Commission Inquiry" class="yellow-link">Commission Request</a>.
             </p>
           </div>
 
@@ -160,20 +167,18 @@
             <span class="slide-tag">Tools & Software</span>
             <h3>My Toolkit</h3>
             <p>
-              Working primarily in digital mediums Varying between 2d
-              and beginner level 3d(along with photobashing) with a focus on expressive
-              Lighting and vibrant coloring. Comfortable with both stylized
-              and semi-realistic approaches depending on the project.
+              Working primarily in digital mediums, varying between 2D and beginner-level
+              3D (along with photobashing), with a focus on expressive lighting and vibrant
+              coloring. Comfortable with both stylized and semi-realistic approaches depending
+              on the project.
             </p>
             <div class="slide-meta">
               <span class="slide-badge">Krita</span>
-              <span class="slide-badge">FireAlpeca</span>
+              <span class="slide-badge">FireAlpaca</span>
               <span class="slide-badge">Ibis Paint</span>
               <span class="slide-badge">Photoshop</span>
               <span class="slide-badge">Microsoft Paint</span>
               <span class="slide-badge">Blender</span>
-
-
             </div>
           </div>
 
@@ -191,136 +196,133 @@
       </div>
     </div>
   </section>
-<!-- ══ COMMISSIONS ══ -->
-<section id="commissions">
-  <div class="section-title">Commissions</div>
-  <div class="section-divider"></div>
 
-  <div class="about-card" style="max-width:800px;margin:0 auto 40px;text-align:center;">
-    <h3>Status: OPEN</h3>
-    <p>
-      Commissions are open from August 1st to October 30th — The pricing below is a reference guide
-      so you know what to expect.
-    </p>
-  </div>
-
-  <div class="skills-grid" style="margin-top:20px;">
-
-    <!-- Sketch Tier -->
-    <div class="skill-card" style="text-align:left;">
-      <img src="sketch.webp" alt="Sketch stage placeholder"
-           style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
-      <h4><i class="fa fa-pencil"></i> Sketch</h4>
-      <p>Rough sketch, loose linework and pose exploration.</p>
-      <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$5-$10</p>
-    </div>
-
-    <!-- Lineart Tier -->
-    <div class="skill-card" style="text-align:left;">
-      <img src="B&W.webp" alt="Lineart stage placeholder"
-           style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
-      <h4><i class="fa fa-pen-nib"></i> Black and white / Grayscale</h4>
-      <p>rough idea for lighting position and rendering importance</p>
-      <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$10-$15</p>
-    </div>
-
-    <!-- Flat Color Tier -->
-    <div class="skill-card" style="text-align:left;">
-      <img src="Colored.webp" alt="Flat color stage placeholder"
-           style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
-      <h4><i class="fa fa-palette"></i> Flat Color</h4>
-      <p>grayscale covered with flat colors.</p>
-      <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$20-$25</p>
-    </div>
-
-    <!-- Full Render Tier -->
-    <div class="skill-card" style="text-align:left;">
-      <img src="1000.webp" alt="Full render stage placeholder"
-           style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
-      <h4><i class="fa fa-wand-magic-sparkles"></i> Full Render</h4>
-      <p>Complete piece with additional shading, lighting, and rendered details.</p>
-      <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$30-$40</p>
-    </div>
-
-  </div>
-
-  <div class="about-card" style="max-width:800px;margin:40px auto 0;">
-    <h3>Add-ons & Notes</h3>
-    <ul>
-      <li>+%40 per additional character</li>
-      <li>+$5 for simple background / +$10 for detailed background</li>
-      <li>Prices may vary depending on complexity (outfits, props, effects)</li>
-      <li>No NSFW, gore, or hate-based imagery — see Art Guidelines above</li>
-    </ul>
-  </div>
-  <!-- Yellow Email Button -->
-<div style="text-align: center; margin-top: 30px;">
-  <a href="mailto:mohammadreza1kazemeini@gmail.com?subject=Commission Inquiry"
-     style="display: inline-block; padding: 12px 24px; background-color: var(--yellow); color: #000;
-            font-weight: bold; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">
-    Request Commission
-  </a>
-</div>
-</section>
   <!-- ══ COMMISSIONS ══ -->
- <!-- ══ COMMISSIONS ══ -->
-<section id="commission">
-  <div class="section-title">what I post</div>
-  <div class="section-divider"></div>
+  <section id="commissions">
+    <div class="section-title">Commissions</div>
+    <div class="section-divider"></div>
 
-  <div class="content-slider">
+    <div class="about-card" style="max-width:800px;margin:0 auto 40px;text-align:center;">
+      <h3>Status: OPEN</h3>
+      <p>
+        Commissions are open from August 1st to October 30th — the pricing below is a
+        reference guide so you know what to expect.
+      </p>
+    </div>
 
-    <!-- Slide 1 -->
-    <div class="content-slide active">
-      <video class="slide-video" autoplay loop muted playsinline>
-        <source src="video1.webm" type="video/webm">
-      </video>
-      <div class="slide-overlay">
-        <h3>What I Post</h3>
-        <p>I will be posting guides, finished works and processes for my artwork as much as I can. The following works are not to be sold to 3rd parties or used to profit from.</p>
+    <div class="skills-grid" style="margin-top:20px;">
+
+      <div class="skill-card" style="text-align:left;">
+        <img src="sketch.webp" alt="Sketch stage placeholder"
+             style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
+        <h4><i class="fa fa-pencil"></i> Sketch</h4>
+        <p>Rough sketch, loose linework and pose exploration.</p>
+        <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$5–$10</p>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="content-slide">
-      <video class="slide-video" autoplay loop muted playsinline>
-        <source src="video2.webm" type="video/webm">
-      </video>
-      <div class="slide-overlay">
-        <h3>What I Draw</h3>
-        <ul>
-          <li>Character portraits (bust / half / full body)</li>
-          <li>OC designs & reference sheets</li>
-          <li>Fan art of existing characters</li>
-          <li>Simple scene / background pieces</li>
-        </ul>
+      <div class="skill-card" style="text-align:left;">
+        <img src="B&W.webp" alt="Lineart stage placeholder"
+             style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
+        <h4><i class="fa fa-pen-nib"></i> Black and White / Grayscale</h4>
+        <p>Rough idea for lighting position and rendering importance.</p>
+        <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$10–$15</p>
       </div>
+
+      <div class="skill-card" style="text-align:left;">
+        <img src="Colored.webp" alt="Flat color stage placeholder"
+             style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
+        <h4><i class="fa fa-palette"></i> Flat Color</h4>
+        <p>Grayscale covered with flat colors.</p>
+        <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$20–$25</p>
+      </div>
+
+      <div class="skill-card" style="text-align:left;">
+        <img src="1000.webp" alt="Full render stage placeholder"
+             style="width:100%;border-radius:10px;margin-bottom:12px;object-fit:cover;aspect-ratio:1/1;">
+        <h4><i class="fa fa-wand-magic-sparkles"></i> Full Render</h4>
+        <p>Complete piece with additional shading, lighting, and rendered details.</p>
+        <p style="font-weight:700;color:var(--yellow);font-size:1.1rem;">$30–$40</p>
+      </div>
+
     </div>
 
-    <!-- Controls -->
-    <div class="content-slide-controls">
-      <button class="content-slide-btn" onclick="changeContentSlide(-1)">
-        <i class="fa fa-chevron-left"></i>
-      </button>
-      <div class="content-slide-dots" id="contentSlideDots"></div>
-      <button class="content-slide-btn" onclick="changeContentSlide(1)">
-        <i class="fa fa-chevron-right"></i>
-      </button>
+    <div class="about-card" style="max-width:800px;margin:40px auto 0;">
+      <h3>Add-ons & Notes</h3>
+      <ul>
+        <li>+40% per additional character</li>
+        <li>+$5 for simple background / +$10 for detailed background</li>
+        <li>Prices may vary depending on complexity (outfits, props, effects)</li>
+        <li>No NSFW, gore, or hate-based imagery — see Art Guidelines above</li>
+      </ul>
     </div>
 
-  </div>
-</section>
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="mailto:mohammadreza1kazemeini@gmail.com?subject=Commission Inquiry"
+         style="display: inline-block; padding: 12px 24px; background-color: var(--yellow); color: #000;
+                font-weight: bold; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">
+        Request Commission
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ WHAT I POST ══ -->
+  <section id="posts">
+    <div class="section-title">What I Post</div>
+    <div class="section-divider"></div>
+
+    <div class="content-slider">
+
+      <div class="content-slide active">
+        <video class="slide-video" autoplay loop muted playsinline>
+          <source src="video1.webm" type="video/webm">
+        </video>
+        <div class="slide-overlay">
+          <h3>What I Post</h3>
+          <p>
+            I will be posting guides, finished works and processes for my artwork as much as
+            I can. The following works are not to be sold to 3rd parties or used to profit from.
+          </p>
+        </div>
+      </div>
+
+      <div class="content-slide">
+        <video class="slide-video" autoplay loop muted playsinline>
+          <source src="video2.webm" type="video/webm">
+        </video>
+        <div class="slide-overlay">
+          <h3>What I Draw</h3>
+          <ul>
+            <li>Character portraits (bust / half / full body)</li>
+            <li>OC designs & reference sheets</li>
+            <li>Fan art of existing characters</li>
+            <li>Simple scene / background pieces</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-slide-controls">
+        <button class="content-slide-btn" onclick="changeContentSlide(-1)">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="content-slide-dots" id="contentSlideDots"></div>
+        <button class="content-slide-btn" onclick="changeContentSlide(1)">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ══ SOCIALS ══ -->
   <section id="socials">
     <div class="section-title">Find Me Online</div>
     <div class="section-divider"></div>
     <div class="socials-grid">
-      <!-- Replace # with your actual profile URLs -->
-      <a href="https://artfight.net/~Mrk1385" class="social-link artfight" target="" rel="noopener">
+      <a href="https://artfight.net/~Mrk1385" class="social-link artfight" rel="noopener">
         <i class="fa fa-sword" style="color:var(--yellow)"></i>
         Art Fight
       </a>
-      <a href="https://www.instagram.com/mr.k_archive/" class="social-link instagram" target="" rel="noopener">
+      <a href="https://www.instagram.com/mr.k_archive/" class="social-link instagram" target="_blank" rel="noopener">
         <i class="fab fa-instagram"></i>
         Instagram
       </a>
@@ -328,7 +330,7 @@
         <i class="fab fa-tumblr"></i>
         Tumblr
       </a>
-         <a href="https://t.me/MrkArtArchieve" class="social-link telegram" target="_blank" rel="noopener">
+      <a href="https://t.me/MrkArtArchieve" class="social-link telegram" target="_blank" rel="noopener">
         <i class="fab fa-telegram"></i>
         Telegram
       </a>
@@ -337,8 +339,17 @@
 
   <footer>© Mr.K — Portfolio/Archive · All artwork belongs to their respective creator</footer>
 
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
-<script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="model3d.js"></script>
 
+</body>
 </html>
